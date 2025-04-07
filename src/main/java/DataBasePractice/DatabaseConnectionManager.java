@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+//singleton class to manage the DB connection
+
 public class DatabaseConnectionManager {
     private static DatabaseConnectionManager instance;
     private Connection connection;
