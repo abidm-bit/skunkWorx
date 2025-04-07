@@ -31,6 +31,8 @@ public class ThatTree {
     }
 
     public static void main(String[] args) {
+        printTree(3);
+        out.println("\n");
         printTree(5);
         out.println("\n");
         printTree(7);

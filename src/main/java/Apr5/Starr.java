@@ -1,7 +1,6 @@
 package Apr5;
 
 import static java.lang.System.out;
-//out.println("*");
 
 public class Starr {
      void main() {
