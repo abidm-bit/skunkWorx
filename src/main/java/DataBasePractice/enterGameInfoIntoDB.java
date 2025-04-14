@@ -18,7 +18,7 @@ class enterGameInfoIntoDB {
         String game = scanner.nextLine();
         out.println("What system did you play this game on?");
         String system = scanner.nextLine();
-
+        scanner.close();
 
         String query = "INSERT INTO gamesarchive (game, system) VALUES (?, ?)";
 
@@ -39,7 +39,7 @@ class enterGameInfoIntoDB {
         } catch (SQLException e) {
             out.println(e.getMessage());
         }
-        scanner.close();
+//        scanner.close();
     }
 
 
