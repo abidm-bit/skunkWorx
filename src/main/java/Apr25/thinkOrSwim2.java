@@ -19,6 +19,18 @@ class NINTENDO extends thinkOrSwim2{
     }
 }
 
+class SUBWAYFOOTLONG extends thinkOrSwim2{
+    protected SUBWAYFOOTLONG(double latest, double previous){
+        super(latest, previous);
+    }
+}
+
+class MACBOOKAIR extends thinkOrSwim2{
+    protected MACBOOKAIR(double latest, double previous){
+        super(latest, previous);
+    }
+}
+
 class thinkOrSwim2 {
 
     private double result;
@@ -43,9 +55,12 @@ class thinkOrSwim2 {
       }
 
     public static void main(String[] args) {
-        new SPY(548.36,489.24);
-        new VICKS(28.34,35.89);
-        new NINTENDO(59.99,59.99);
+        new SPY(548.36,489.24); // las vegas
+        new VICKS(28.34,35.89); // market bpd
+        new NINTENDO(59.99,59.99); // 8 year old nintendo games
+        new SUBWAYFOOTLONG(10.56,5.39); // inflation
+        new MACBOOKAIR(999.99,1799.99); // apple is for the consumer
+
     }
 }
 
