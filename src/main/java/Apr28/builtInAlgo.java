@@ -19,10 +19,9 @@ public class builtInAlgo {
             collections.fill() to replace every element in a collection with a single value
             collections.addAll() to add all elements from an input source
             collections.frequency() to return the frequency of an element
-             // collections.disjoint() to check if two collections share elements
-             // collections.binarySearch() to return the index of an element in a collection :: Arrays.binarySearch()
-             // collections.copy()
-            // collections.swap() to swap the position of two elements in a collection,
+            collections.disjoint() to check if two collections don't share elements
+            collections.binarySearch() to return the index of an element in a collection :: Arrays.binarySearch()
+            collections.swap() to swap the position of two elements in a collection,
     */
 
 public static void main(String[]args){
@@ -53,7 +52,35 @@ public static void main(String[]args){
     println("post shuffle()");
     println(numb3);
 
-    // spin back & add disjoint, binarysearch, copy, swap
+    ArrayList<Integer> num5 = new ArrayList<>(List.of(4,5,6,8,12));
+    ArrayList<Integer> num6 = new ArrayList<>();num6.add(7); num6.add(8);
+    System.out.println(Collections.disjoint(num5,num6)); // false bc the two collections share elements
+
+    println("");
+    println(num6);
+    Collections.swap(num6,1,0);
+    println("post swap");
+    println(num6);
+
+    println("");
+
+
+    List<Character> harbor = new ArrayList<>(List.of('D','R','A','M','J'));
+    println("harbor : " + harbor);
+    List<Character> dexter = new ArrayList<>(harbor);
+    println("dexter : " +dexter);
+
+//    println(Collections.binarySearch(num5,8));
+
+    println("");
+    println("original"+num5);
+    Collections.rotate(num5,2);
+    println("+2 rotate "+num5);
+    ArrayList<Integer> num7 = new ArrayList<>(List.of(4,5,6,8,12));
+    println("original"+num7);
+    Collections.rotate(num7,-2);
+    println("-2 rotate "+num7);
+
 
 
 
