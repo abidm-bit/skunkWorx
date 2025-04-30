@@ -25,22 +25,39 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LC1295 {
-    static int findNumbers(int[] nums) {
-        ArrayList<String> process = new ArrayList<>();
-        for(int i:nums){process.add(String.valueOf(i));}
-        int counter =0;
-        for(String i:process){
-            if(i.length()%2==0){counter++;}
+    
+
+    // runtime 3ms
+//    static int findNumbersm1(int[] nums) {
+//        ArrayList<String> process = new ArrayList<>();
+//        for(int i:nums){process.add(String.valueOf(i));}
+//        int counter =0;
+//        for(String i:process){
+//            if(i.length()%2==0){counter++;}
+//        }
+//        return counter;
+//    }
+
+    // 2ms runtime, better Big O than the first solution because
+    // I ran a for loop to convert to a String & add to a Collection
+    static int findNumbersm2(int[] nums) {
+        int count = 0;
+        for (int i : nums) {
+            String s = Integer.toString(i);
+            if (s.length() % 2 == 0) {
+                count++;
+            }
         }
-        return counter;
+        return count;
     }
+
 
     public static void main(String[] args) {
         int[] inp1 = {12,345,2,6,7896};
         int[] inp2 = {555,901,482,1771};
 
-        System.out.println(findNumbers(inp1));
-        System.out.println(findNumbers(inp2));
+        System.out.println(findNumbersm2(inp1));
+        System.out.println(findNumbersm2(inp2));
 
     }
 
