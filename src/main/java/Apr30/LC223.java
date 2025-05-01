@@ -33,6 +33,11 @@ public class LC223 {
     }
 
     void main(){
-
+        int ax1 = -3, ay1 = 0, ax2 = 3, ay2 = 4, bx1 = 0, by1 = -1, bx2 = 9, by2 = 2;
+        // expectedOutput: 45
+        System.out.println(computeArea(ax1,ay1,ax2,ay2,bx1,by1,bx2,by2));
+        int ax3 = -2, ay3 = -2, ax4 = 2, ay4 = 2, bx3 = -2, by3 = -2, bx4 = 2, by4 = 2;
+        // expectedOutput: 16
+        System.out.println(computeArea(ax3,ay3,ax4,ay4,bx3,by3,bx4,by4));
     }
 }
