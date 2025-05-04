@@ -21,7 +21,7 @@ public class henryFord {
         System.out.println(factorialStream(5)); // 120
         System.out.println(factorialStream(6)); // 720
 
-        System.out.println(fm1(5));
-
+        System.out.println("for loop:");
+        System.out.println(fm1(5)); // 120
     }
 }

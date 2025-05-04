@@ -36,11 +36,5 @@ public class ThatTree {
         printTree(5);
         out.println("\n");
         printTree(7);
-
-
-
-
-
-
     }
 }

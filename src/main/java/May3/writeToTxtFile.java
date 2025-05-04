@@ -3,7 +3,6 @@ package May3;
 import java.io.File;
 import java.io.FileWriter;
 
-import static java.lang.System.in;
 import static java.lang.System.out;
 
 public class writeToTxtFile {

@@ -39,7 +39,6 @@ class enterGameInfoIntoDB {
         } catch (SQLException e) {
             out.println(e.getMessage());
         }
-//        scanner.close();
     }
 
 
