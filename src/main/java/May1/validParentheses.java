@@ -52,10 +52,6 @@ public class validParentheses {
         System.out.println(isValid("()[]{}")); // expected true
         System.out.println(isValid("(]"));     // expected false
         System.out.println(isValid("([])"));   // expected true
-
-
-
-
     }
 
 
