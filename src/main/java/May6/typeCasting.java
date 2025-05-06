@@ -1,5 +1,7 @@
 package May6;
 
+import java.util.ArrayList;
+
 import static java.io.IO.println;
 
 class typeCasting{
@@ -28,6 +30,13 @@ void main(){
     char zz = (char) z;
     println(z); // value
     println(zz); // a
+
+    String inp = "abc";
+    ArrayList<Byte> outp = new ArrayList<>();
+    for(int i =0; i<inp.length();i++){
+        outp.add((byte)inp.charAt(i));
+    }
+    println(outp);
 
 
 
