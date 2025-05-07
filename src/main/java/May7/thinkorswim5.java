@@ -1,4 +1,4 @@
-package ThinkOrSwim;
+package May7;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -62,6 +62,7 @@ class thinkorswim5 {
         }
     }
 
+    // debugging
     public String toString(){
         return  name + " | " + "The latest price is "+ latestPrice + " | " + " The previous price was " + previousPrice + " | " + " Δ: " + incdcr();
     }
