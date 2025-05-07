@@ -78,7 +78,10 @@ class thinkorswim5 {
     public static void main(String[] args) {
         new thinkorswim5("Sour Patch Kids",1.50,0.75);
         new thinkorswim5("Arizona",1.00,1.00);
-        new thinkorswim5("Palantir",109.45,18.75);
+        new thinkorswim5("Palantir",108.45,18.75);
+        new thinkorswim5("Au",108.94,45.60);
+        new thinkorswim5("Palantir",108.45,113.57);
+
     }
 
 
