@@ -56,15 +56,16 @@ class thinkorswim5 {
         DecimalFormat formatter = new DecimalFormat("#0.00");
         String z =formatter.format(getChange()) + "%";
         switch(Math.signum(getChange())){
-            case (1.0) -> {return z + " increase";} // "Green"
-            case (-1.0)-> {return z + " decrease";} // "Red"
-            default -> {return z + ", No change";}   // "Grey"
+            case (1.0) -> {return "Δ: " + z + " increase";} // "Green"
+            case (-1.0)-> {return "Δ: " + z + " decrease";} // "Red"
+            default -> {return "Δ: " + z + ", No change";}   // "Grey"
         }
     }
 
-    // debugging
+    
+    // debugging only
     public String toString(){
-        return  name + " | " + "The latest price is "+ latestPrice + " | " + " The previous price was " + previousPrice + " | " + " Δ: " + incdcr();
+        return  name + " | " + "The latest price is "+ latestPrice + " | " + " The previous price was " + previousPrice + " | " +  incdcr();
     }
 
     public thinkorswim5(String name, double latestPrice, double previousPrice){
@@ -72,7 +73,8 @@ class thinkorswim5 {
        setLatestPrice(BigDecimal.valueOf(latestPrice));
        setPreviousPrice(BigDecimal.valueOf(previousPrice));
        setChange();
-        System.out.println(toString());
+//        System.out.println(toString());
+        System.out.println(incdcr());
     }
 
 
@@ -82,7 +84,7 @@ class thinkorswim5 {
         new thinkorswim5("Palantir",108.45,18.75);
         new thinkorswim5("Au",108.94,45.60);
         new thinkorswim5("Palantir",108.45,113.57);
-
+        new thinkorswim5("Direxion Daily AAPL Bull 2X Shares",21.10,21.19);
     }
 
 
