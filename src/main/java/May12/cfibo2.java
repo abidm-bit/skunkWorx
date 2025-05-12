@@ -1,6 +1,7 @@
 package May12;
 
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class cfibo2 {
 
@@ -38,6 +39,7 @@ public class cfibo2 {
         System.out.println();
         // print the fibonacci series upto 100
         printFiboUpto(100);
+        System.out.println();
 
     }
 }
