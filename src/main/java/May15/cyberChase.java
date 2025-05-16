@@ -11,26 +11,24 @@ public class cyberChase {
         }
     }
 
-    static void medianElement (String []input){
-        int median = input.length/2;
-        if(input.length%2!=0){
-            System.out.println(input[median]);
+static int sumDigits(int x){
+        int sum =0;
+        while(x>0){
+            sum+=x%10;
+            x=x/10;
         }
-        else{
-            System.out.println(input[((median)+(median-1)/2)]);
-        }
-    }
+        return sum;
+}
+
+static
 
     void main(){
     wantedLevel(5); // SWAT trux
     System.out.println();
     wantedLevel(6); // raptor & tanx
     System.out.println();
-    String[]s1 = {"youtube","stack overflow","chatgpt","colleagues"};
-    String[]s2 = {"limitless","taking of pelham 123","deja vu"};
 
-    medianElement(s2);
-    medianElement(s1);
+        System.out.println(sumDigits(456));
 
     }
 }
