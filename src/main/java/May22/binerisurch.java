@@ -1,5 +1,6 @@
 package May22;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class binerisurch {
@@ -35,7 +36,13 @@ public class binerisurch {
 //      System.out.println(kbs(td1,keytd2));
 //      System.out.println(kbs(td1,keytd3));
 
+      // The above function is a breakdown of the binary search function,
+      // following the princeton textbook, idk y it doesn't run
+      // chatgpt and gemini  confirmed that the algorithm is correct
+
       System.out.println(Arrays.binarySearch(td1,keytd1));
+      System.out.println(Arrays.binarySearch(td1,keytd2));
+      System.out.println(Arrays.binarySearch(td1,keytd3)); // index should be (Absolute value -1)
 
   }
 }
