@@ -10,8 +10,6 @@ class sortMashHap {
     /*
     * Sorting hashmaps
     *   1) TreeMap
-    *   2) stream and sort by Key
-    *   3) stream and sort by Value
     * */
 
 
@@ -30,26 +28,5 @@ class sortMashHap {
             sortedGP.put(pr,gummies.get(pr));
         }
         System.out.println(sortedGP.entrySet());
-
-
-//        System.out.println();
-//        System.out.println("Stream and sort by Key");
-//
-//
-//        HashMap<Double,String> sortedGummyPrices =gummies.entrySet().stream()
-//                .sorted(Map.Entry.comparingByKey())
-//                .collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue,(e1,e2)->e1,HashMap::new));
-//
-//        System.out.println(sortedGummyPrices.entrySet());
-//
-//        System.out.println();
-//        System.out.println("Stream and sort by Value");
-//
-//        HashMap<Double,String> sortedGummyPrices2 = gummies.entrySet().stream()
-//                .sorted(Map.Entry.comparingByValue())
-//                .collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue,(e1,e2)->e2,HashMap::new));
-//
-//        System.out.println(sortedGummyPrices2.entrySet());
-//    }
-
+}
 }
