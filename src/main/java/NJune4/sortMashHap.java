@@ -50,15 +50,3 @@ public class sortMashHap {
 
     }
 }
-
-
-//
-//        System.out.println();
-//        System.out.println("Stream and sort by Value");
-//
-//        HashMap<Double,String> sortedGummyPrices2 = gummies.entrySet().stream()
-//                .sorted(Map.Entry.comparingByValue())
-//                .collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue,(e1,e2)->e2,HashMap::new));
-//
-//        System.out.println(sortedGummyPrices2.entrySet());
-//
