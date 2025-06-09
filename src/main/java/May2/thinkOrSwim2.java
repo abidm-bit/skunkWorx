@@ -14,9 +14,9 @@ class thinkOrSwim2 {
     private String incdcr(){
         DecimalFormat formatter = new DecimalFormat("#0.00");
         String z =formatter.format(result) + " %";
-        switch(Math.signum(result)){
-            case (1.0) -> {return z + " increase";} // "Green"
-            case (-1.0)-> {return z + " decrease";} // "Red"
+        switch((int) Math.signum(result)){
+            case (1) -> {return z + " increase";} // "Green"
+            case (-1)-> {return z + " decrease";} // "Red"
             default -> {return z + " no change";}   // "Grey"
         }
     }

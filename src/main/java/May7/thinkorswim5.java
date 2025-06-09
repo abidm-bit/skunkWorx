@@ -55,9 +55,9 @@ class thinkorswim5 {
     private String incdcr(){
         DecimalFormat formatter = new DecimalFormat("#0.00");
         String z =formatter.format(getChange()) + "%";
-        switch(Math.signum(getChange())){
-            case (1.0) -> {return "Δ: " + z + " increase";} // "Green"
-            case (-1.0)-> {return "Δ: " + z + " decrease";} // "Red"
+        switch((int) Math.signum(getChange())){
+            case (1) -> {return "Δ: " + z + " increase";} // "Green"
+            case (-1)-> {return "Δ: " + z + " decrease";} // "Red"
             default -> {return "Δ: " + z + ", No change";}   // "Grey"
         }
     }

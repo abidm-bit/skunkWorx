@@ -2,8 +2,6 @@ package May20;
 
 import java.util.*;
 
-import static java.io.IO.println;
-
 public class nintendoDS {
     void main(){
 
@@ -26,10 +24,10 @@ public class nintendoDS {
         LinkedList<String> name = new LinkedList<>(
         List.of("sour power straws","m&m peanuts","sour patch kids","hersheys oreos","crunch"));
         // O(1) access for the first & last elements using .getFirst() , .getLast()
-        println(name.getFirst()); // expect sour power straws
-        println(name.getLast());  // expect crunch
+        System.out.println(name.getFirst()); // expect sour power straws
+        System.out.println(name.getLast());  // expect crunch
         // O(n) access a specific element, requires going thru pointers
-        println(name.get(3)); // expect hersheys oreos
+        System.out.println(name.get(3)); // expect hersheys oreos
         System.out.println();
 
         Stack<String> boox = new Stack<>();
@@ -39,10 +37,10 @@ public class nintendoDS {
         // Stacks keep a LIFO order, the latest element will be accessed first
         // good for depth first search
         // O(1) for the top element
-        println(boox.peek()); // expect "The Pearl"
+        System.out.println(boox.peek()); // expect "The Pearl"
         System.out.println();
         // O(n) for all elements, u have to traverse thru all elements, no random access
-        for(String b:boox){println(b);}
+        for(String b:boox){System.out.println(b);}
         // which is why Queues (ArrayQueue, Dequeue) are preferred over Stacks
 
         System.out.println();
@@ -62,10 +60,10 @@ public class nintendoDS {
         // Store data in key value pairs , 2 data types
         // LIFO order, whatever is stored last, is processed last
         // doesn't store duplicate values for a key
-      studentId.put(6,"Derrick");
-      studentId.put(35,"Kevin");
-      studentId.put(1,"Bosh");
-      // O(1) to add k,v pairs
+        studentId.put(6,"Derrick");
+        studentId.put(35,"Kevin");
+        studentId.put(1,"Bosh");
+        // O(1) to add k,v pairs
         System.out.println(studentId.keySet()); // prints the keys only, so jersey numbers
         System.out.println();
         System.out.println(studentId.values()); // prints the values only, so player names
@@ -87,8 +85,5 @@ public class nintendoDS {
         // Sets store unique elements only
         for(int speed:heavyfoot){radar.add(speed);}
         System.out.println(radar);
-
     }
-
-
 }

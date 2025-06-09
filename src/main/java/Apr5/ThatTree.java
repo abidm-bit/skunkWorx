@@ -1,9 +1,6 @@
 package Apr5;
 
-import static java.lang.System.out;
-
 public class ThatTree {
-
 
     static void printTree(int height) {
         for (int i = 1; i <= height; i++) {
@@ -32,9 +29,9 @@ public class ThatTree {
 
     public static void main(String[] args) {
         printTree(3);
-        out.println("\n");
+        System.out.println("\n");
         printTree(5);
-        out.println("\n");
+        System.out.println("\n");
         printTree(7);
     }
 }

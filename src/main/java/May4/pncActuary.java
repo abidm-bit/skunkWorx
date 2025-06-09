@@ -2,8 +2,6 @@ package May4;
 
 import java.util.stream.IntStream;
 
-import static java.lang.System.out;
-
 public class pncActuary {
 
     static String factorialM1(int x){
@@ -41,22 +39,18 @@ public class pncActuary {
                 (factorialM3(pool)/factorialM3(choices)) + " possible combinations ";
     }
 
-
-
     public static void main(String[] args) {
-        out.println(factorialM2(5));    // 120
-        out.println(factorialM2(6));  // 720
-        out.println();
-        out.println(factorialM1(10));
+        System.out.println(factorialM2(5));    // 120
+        System.out.println(factorialM2(6));  // 720
+        System.out.println();
+        System.out.println(factorialM1(10));
         // 10 objects can be arranged in 3,628,800 ways
 
         // given 10 objects, you want to choose 6 objects in order
-        out.println(printArrangements(10,6));
+        System.out.println(printArrangements(10,6));
 
         // given 10 characters, you want to choose 3 numbers for a pin
         // how many possible combinations do u have
-        out.println(combinations(10,3));
-
+        System.out.println(combinations(10,3));
     }
-
 }
