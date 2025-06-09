@@ -3,18 +3,14 @@ package Apr13;
 import java.util.HashMap;
 import java.util.stream.IntStream;
 
-import static java.io.IO.println;
-import static java.lang.System.out;
-
 public class ChickfilA {
-
 
     static void gtaTwelve(int wantedLevel){
         for(int i=1;i<=wantedLevel+1;i++){
             for(int e=1;e<i;e++){
-                out.print("*"); // print stars in the same line
+                System.out.print("*"); // print stars in the same line
             }
-            out.println();  // skip to the next line
+            System.out.println();  // skip to the next line
         }
     }
 
@@ -49,7 +45,6 @@ public class ChickfilA {
             System.out.print(" ");
         }
         System.out.println("*");
-
     }
 
     static boolean primeDrink(int x){
@@ -60,12 +55,10 @@ public class ChickfilA {
         return counter ==2;
     }
 
-
-
     static void amazonQuestion(){
         for(int i=1;i<100;i++){
-            if(primeDrink(i)){out.println(i+" is a prime number");}
-            else out.println(i + " is a composite number");
+            if(primeDrink(i)){System.out.println(i+" is a prime number");}
+            else System.out.println(i + " is a composite number");
         }
     }
 
@@ -73,29 +66,26 @@ public class ChickfilA {
         HashMap<Character,Integer> answer = new HashMap<>();
         char[]process = input.toLowerCase().replaceAll(" ","").toCharArray();
         for(char x:process){answer.put(x,answer.getOrDefault(x,0)+1);}
-        println(answer.toString());
+        System.out.println(answer.toString());
     }
 
     void main(){
         gtaTwelve(6); // army gonna clip my ass
 
-        println("\n");
+        System.out.println("\n");
 
         merryChrysler(5); // issa christmas tree
 
-        println("\n");
+        System.out.println("\n");
 
         String inp1 = "Teeeeeessst Autoooooooomationn";
         countChars(inp1);
 
-        println("\n");
-        println(primeDrink(12));
-        println(primeDrink(3));
+        System.out.println("\n");
+        System.out.println(primeDrink(12));
+        System.out.println(primeDrink(3));
 
-        println("\n");
+        System.out.println("\n");
         amazonQuestion();
-
-
-
     }
 }

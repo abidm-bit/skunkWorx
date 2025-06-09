@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static java.io.IO.println;
 
 public class builtInAlgo {
 
@@ -28,58 +27,58 @@ public static void main(String[]args){
 
     ArrayList<Integer> numb1 = new ArrayList<>(List.of(123,456,103,444,493));
 
-    println("");
-    println("the minimum element in this collection is: "+Collections.min(numb1)); // expect 103
-    println("the maximum element in this collection is: "+Collections.max(numb1)); // expect 493
-    println("");
-    println(numb1);                  // expect: 123,456,103,444,493
-    println("");
+    System.out.println("");
+    System.out.println("the minimum element in this collection is: "+Collections.min(numb1)); // expect 103
+    System.out.println("the maximum element in this collection is: "+Collections.max(numb1)); // expect 493
+    System.out.println("");
+    System.out.println(numb1);                  // expect: 123,456,103,444,493
+    System.out.println("");
     Collections.reverse(numb1);      // reverse method
-    println("post reverse()");
-    println(numb1);                  // expect: 493,444,103,456,123
-    println("");
+    System.out.println("post reverse()");
+    System.out.println(numb1);                  // expect: 493,444,103,456,123
+    System.out.println("");
     Collections.fill(numb1,9);  // fill method, replace every number with 9
-    println("post fill()");
-    println(numb1);                 // expect: 9,9,9,9,9
-    println("");
+    System.out.println("post fill()");
+    System.out.println(numb1);                 // expect: 9,9,9,9,9
+    System.out.println("");
     // I want to return the frequency of the number 9 in this collection
-    println(Collections.frequency(numb1,9)); // expect 5
-    println("");
+    System.out.println(Collections.frequency(numb1,9)); // expect 5
+    System.out.println("");
 
     ArrayList<Integer>numb3 = new ArrayList<>(List.of(456,8,12));
-    println(numb3);
+    System.out.println(numb3);
     Collections.shuffle(numb3);
-    println("post shuffle()");
-    println(numb3);
+    System.out.println("post shuffle()");
+    System.out.println(numb3);
 
     ArrayList<Integer> num5 = new ArrayList<>(List.of(4,5,6,8,12));
     ArrayList<Integer> num6 = new ArrayList<>();num6.add(7); num6.add(8);
     System.out.println(Collections.disjoint(num5,num6)); // false bc the two collections share elements
 
-    println("");
-    println(num6);
+    System.out.println("");
+    System.out.println(num6);
     Collections.swap(num6,1,0);
-    println("post swap");
-    println(num6);
+    System.out.println("post swap");
+    System.out.println(num6);
 
-    println("");
+    System.out.println("");
 
 
     List<Character> harbor = new ArrayList<>(List.of('D','R','A','M','J'));
-    println("harbor : " + harbor);
+    System.out.println("harbor : " + harbor);
     List<Character> dexter = new ArrayList<>(harbor);
-    println("dexter : " +dexter);
+    System.out.println("dexter : " +dexter);
 
-//    println(Collections.binarySearch(num5,8));
+//    System.out.println(Collections.binarySearch(num5,8));
 
-    println("");
-    println("original"+num5);
+    System.out.println("");
+    System.out.println("original"+num5);
     Collections.rotate(num5,2);
-    println("+2 rotate "+num5);
+    System.out.println("+2 rotate "+num5);
     ArrayList<Integer> num7 = new ArrayList<>(List.of(4,5,6,8,12));
-    println("original"+num7);
+    System.out.println("original"+num7);
     Collections.rotate(num7,-2);
-    println("-2 rotate "+num7);
+    System.out.println("-2 rotate "+num7);
 
 
 
