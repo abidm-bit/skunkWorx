@@ -21,8 +21,8 @@ public class binerisurch {
         while(f<=e){
             // median = firstIndex + indexRange /2
             int median = (f+(e-f))/2;
-            if(key<arr[median])e=median-1;
-            else if(key>arr[median])f=median +1;
+            if(key<arr[median]){e=median-1;}
+            else if(key>arr[median]){f=median +1;}
             else return arr[median];
         }
         // if the key isn't in the array return -1
@@ -32,17 +32,15 @@ public class binerisurch {
 
   public static void main (String[]args){
       int [] td1 = {1,3,4,5,7}; int keytd1 = 5; int keytd2 =4; int keytd3 = 6;
-//      System.out.println(kbs(td1,keytd1));
-//      System.out.println(kbs(td1,keytd2));
-//      System.out.println(kbs(td1,keytd3));
+     System.out.println(kbs(td1,keytd1));
+     System.out.println(kbs(td1,keytd2));
+     System.out.println(kbs(td1,keytd3));
 
       // The above function is a breakdown of the binary search function,
       // following the princeton textbook, idk y it doesn't run
       // chatgpt and gemini  confirmed that the algorithm is correct
 
-      System.out.println(Arrays.binarySearch(td1,keytd1));
-      System.out.println(Arrays.binarySearch(td1,keytd2));
-      System.out.println(Arrays.binarySearch(td1,keytd3)); // index should be (Absolute value -1)
+
 
   }
 }
